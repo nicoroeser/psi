@@ -1,6 +1,6 @@
 #include "optionsdlg.h"
 
-#include "../avcall/avcall.h"
+//#include "../avcall/avcall.h"
 #include "iconset.h"
 #include "opt_advanced.h"
 #include "opt_appearance.h"
@@ -17,7 +17,7 @@
 #include "opt_popups.h"
 #include "opt_roster.h"
 #include "opt_shortcuts.h"
-#include "opt_sound.h"
+#include "opt_audio.h"
 #include "opt_status.h"
 #include "opt_toolbars.h"
 #include "opt_tree.h"
@@ -58,9 +58,9 @@ OptionsDlg::OptionsDlg(PsiCon *psi, QWidget *parent) : OptionsDlgBase(psi, paren
     // tabs.append( new OptionsTabIconsetRoster(this) );
     // tabs.append( new OptionsTabIconsetEmoticons(this) );
     // tabs.append( new OptionsTabGroupchat(this) );
-    tabs.append(new OptionsTabSound(this));
-    if (AvCallManager::isSupported())
-        tabs.append(new OptionsTabAvCall(this));
+    tabs.append(new OptionsTabAudio(this));
+    //if (AvCallManager::isSupported())
+    //    tabs.append(new OptionsTabAvCall(this));
     tabs.append(new OptionsTabToolbars(this));
 #ifdef PSI_PLUGINS
     tabs.append(new OptionsTabPlugins(this));

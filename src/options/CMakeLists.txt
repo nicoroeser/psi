@@ -18,11 +18,13 @@ list(APPEND HEADERS
     opt_advanced.h
     opt_events.h
     opt_popups.h
+    opt_recording.h
     opt_roster.h
     opt_roster_main.h
     opt_roster_muc.h
     opt_groupchat.h
     opt_sound.h
+    opt_audio.h
     opt_avcall.h
     opt_messages.h
     opt_messages_common.h
@@ -47,6 +49,7 @@ list(APPEND SOURCES
     opt_advanced.cpp
     opt_appearance.cpp
     opt_application.cpp
+    opt_audio.cpp
     opt_avcall.cpp
     opt_chat.cpp
     opt_events.cpp
@@ -55,6 +58,7 @@ list(APPEND SOURCES
     opt_messages.cpp
     opt_messages_common.cpp
     opt_popups.cpp
+    opt_recording.cpp
     opt_roster.cpp
     opt_roster_main.cpp
     opt_roster_muc.cpp
@@ -92,6 +96,7 @@ list(APPEND FORMS
     opt_messages_common.ui
     opt_plugins.ui
     opt_popups.ui
+    opt_recording.ui
     opt_roster_main.ui
     opt_roster_muc.ui
     opt_shortcuts.ui
